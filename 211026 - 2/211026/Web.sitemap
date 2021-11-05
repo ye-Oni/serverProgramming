@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+	<siteMapNode url="~/Homes/FrmHome.aspx" title="메인페이지"  description="메인페이지">
+
+		<siteMapNode url="~/Homes/FrmCompany.aspx" title="회사소개"  description="회사소개" >
+			<siteMapNode url="~/Homes/FrmHistory.aspx" title="회사연혁"  description="회사연역" />
+			<siteMapNode url="~/Homes/FrmIdea.aspx" title="경영이념"  description="경영이념" />
+		</siteMapNode>
+
+		<siteMapNode url="~/Homes/FrmMember.aspx" title="회원"  description="회원">
+			<siteMapNode url="~/Homes/FrmClause.aspx" title="이용약관"  description="이용약관" />
+			<siteMapNode url="~/Homes/FrmPrivate.aspx" title="개인정보방침"  description="개인정보방침" />
+			<siteMapNode url="~/Homes/FrmInfoMgr.aspx" title="개인정보관리자"  description="개인정보관리자" />
+		</siteMapNode>
+
+	</siteMapNode>
+
+</siteMap>

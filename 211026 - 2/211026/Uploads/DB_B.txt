@@ -1,0 +1,35 @@
+USE [DB_B]
+GO
+
+/****** 개체: Table [dbo].[customer] 스크립트 날짜: 2021-10-13 오후 10:41:31 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+DROP TABLE [dbo].[customer];
+
+GO
+CREATE TABLE [dbo].[customer] (
+    [custom_no] VARCHAR (10)  NOT NULL,
+    [name]      NVARCHAR (20) NOT NULL,
+    [social_no] VARCHAR (20)  NOT NULL,
+    [tel]       VARCHAR (15)  NULL
+);
+
+
+CREATE TABLE [dbo].[memo] (
+    [Num]      INT             IDENTITY (1, 1) NOT NULL,
+    [Name]     NVARCHAR (20)   NULL,
+    [Reg_Date] DATE            NULL,
+    [Contents] NVARCHAR (1000) NULL,
+    PRIMARY KEY CLUSTERED ([Num] ASC)
+);
+
+CREATE TABLE [dbo].[Product] (
+    [prod_name]  NVARCHAR (20) NOT NULL,
+    [prod_color] NVARCHAR (20) NULL,
+    [prod_size]  VARCHAR (20)  NULL,
+    PRIMARY KEY CLUSTERED ([prod_name] ASC)
+);

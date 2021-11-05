@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="_211026.Master.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+          <table style="width : 800px">
+              <tr> <td colspan ="2" style="text-align :center; height :50px">상단영역</td> </tr>
+           
+              <tr>  <td style="width:100px; height :100px"> 메뉴영역 </td>
+                  <td>
+                      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                      </asp:ContentPlaceHolder>
+                  </td>
+              </tr>
+              <tr><td colspan ="2" style="text-align :center; height :50px">하단영역</td></tr>
+   
+          </table>
+        </div>
+    </form>
+</body>
+</html>
